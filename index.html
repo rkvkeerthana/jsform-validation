@@ -1,0 +1,104 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <script src="script.js" defer></script>
+    <title>RKV BOOK STORE website </title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+
+</head>
+<body>
+
+
+<!--navbar-->
+    <header class="header">
+    <nav class="nav">
+        <a href="#" class="nav_logo"> Rkvbook</a>
+<ul class="'nav_items">
+    <li class="nav_item">
+    <a href="#" class="nav_link">home</a>
+    <a href="#" class="nav_link">aboutus</a>
+    <a href="#" class="nav_link">contact</a>
+    </li>
+</ul>
+<button class="button" id="form-open">login</button>
+ </nav>
+ </header>
+ <section class="home">
+    <div class="form_container">
+        <i class="uil uil-times form_close" aria-hidden="true"></i>
+
+        <div class="form login_form">
+        <form action="todo.html">
+            <h2>login</h2>
+            <div class="input_box">
+                <input type="email" placeholder="Enter your email" required/>
+                <i class="uil uil-envelope-alt email"></i>
+            </div>
+            <div class="input_box">
+                <input type="password" placeholder="Enter your password" required/>
+                <i class="uil uil-lock password"></i>
+                <i class="uil uil-eye-slash pw_hide"></i>
+            </div>
+            <div class="option_field">
+                <span class="checkbox">
+                    <input type="checkbox" id="check"/>
+                    <label for="check">Remember me</label>
+                    </span>
+                    <a href="#" class=" forgot_pw">forgot password?</a>
+               
+            </div>
+            <button class="button">login now</button>
+
+        <div class ="login_signup">Don't have an account?<a href="#" id="signup">signup</a></div>
+        </form>
+        </div>
+        <!--signup form-->
+        <div class="form signup_form">
+            <form  action="#">
+                <h2>signup</h2>
+                <div class="input_box">
+                    <input type="email" placeholder="Enter your email" required/>
+                    <i class="uil uil-envelope-alt email"></i>
+                </div>
+                <div class="input_box">
+                    <input type="password" placeholder=" create password" required/>
+                    <i class="uil uil-lock password"></i>
+                    <i class="uil uil-eye-slash pw_hide"></i>
+                </div>
+
+                <div class="input_box">
+                    <input type="password" placeholder=" confirm password" required/>
+                    <i class="uil uil-lock password"></i>
+                    <i class="uil uil-eye-slash pw_hide"></i>
+                </div>
+
+            
+                <button class="button">signup now</button>
+            <div class ="login_signup">already have an account?<a href="#" id="login">login</a></div>
+            </form>
+            </div>
+            </div>
+            
+    <!-- Todo list code here -->
+    <div>
+        <div id="todo-list" class="wrapper">
+            <h1>To-Do List</h1>
+            
+            <input type="text" id="new-task" placeholder="Add a new task">
+            <button onclick="addTask()">ADD</button>
+            </div>
+        
+            <div id="tasks"></div>
+        </div>
+    </section>
+
+<script src="script.js">
+
+ </script>
+
+</body>
+</html>
