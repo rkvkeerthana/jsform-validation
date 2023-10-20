@@ -254,7 +254,7 @@ body {
   /*todo style*/
 body {
     font-family: Arial, sans-serif;
-    background-image: url('img/pic.avif');
+    background-image: url('pic.avif');
     background-size: cover;
     background-position: center;
     background-attachment: fixed; 
